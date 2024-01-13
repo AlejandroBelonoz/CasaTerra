@@ -1,0 +1,208 @@
+html{
+  background-color: #e7e4cd ;
+}
+body {
+  font-size: 16px;
+  font-family: "Overpass", sans-serif;
+  color: #303030;
+  margin: 0;
+}
+main {
+  margin-bottom: 10rem;
+}
+h1 {
+  font-size: 3rem;
+  margin-left: 4rem;
+}
+
+/*------Header------*/
+.header {
+  width: 100%;
+  background: url(../img/img-header.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.logo img {
+  margin-top: 2rem;
+  image-rendering: optimizeQuality;
+}
+.menu ul {
+  padding-bottom: 1rem;
+}
+.menu li {
+  list-style-type: none;
+  display: inline;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.menu a {
+  color: #303030;
+  text-decoration: none;
+  text-align: center;
+  margin: 0.2rem;
+  padding: 0.8rem;
+  font-weight: bold;
+}
+
+/*------Página principal------*/
+#linea {
+  border-color: #303030;
+  border-style: dashed;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 3rem;
+}
+
+.contenido {
+  display: grid;
+      grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+      gap: 20px; /* Espaciado entre columnas */
+}
+.nosotrosMedia {
+  max-width: 100%;
+  height: auto;
+  margin-left: 2rem;
+}
+
+.nosotrosTexto {
+  text-align:left;
+  font-size: x-large;
+  margin-right: 2rem;
+}
+
+/*------Página Consejos------*/
+.contenidoConsejos {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 1.5rem;
+}
+
+/*------Página Productos------*/
+.contenedorCategoria {
+  background-color: #141e05;
+  border-radius: 3rem;
+  border: #ffffff;
+  border-style: solid;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2cm;
+  text-align: center;
+}
+.imagenCategoria {
+  border: #ffffff;
+  border-radius: 1cm;
+  border-style: solid;
+  margin-top: 1cm;
+  margin-left: 1cm;
+  margin-right: 1cm;
+  width: 10cm;
+}
+.tituloCategoria {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+/*------Página Contacto------*/
+.redes ul li {
+  text-align: center;
+  background-color: #141e05;
+  padding-top: 1rem;
+  padding-bottom: 1;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 2rem;
+  color: #ffffff;
+  list-style-type: none;
+  image-rendering: optimizeQuality;
+}
+.contenedorMapa {
+  background-color: #141e05;
+  border-radius: 2rem;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 3rem;
+  font-size: x-large;
+  color: #ffffff;
+}
+.mapa {
+  border-radius: 2rem;
+}
+.formularioDeContacto {
+  background-color: #141e05;
+  border-radius: 2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: x-large;
+  color: #ffffff;
+}
+#submitBtn {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: x-large;
+  font-family: "Overpass", sans-serif;
+}
+
+/*------Página Registro------*/
+.parrafoRegistro {
+  font-size: x-large;
+  text-align: center;
+}
+.contenedorRegistro {
+  background-color: #141e05;
+  border-radius: 3rem;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 2cm;
+  text-align: justify;
+  color: #ffffff;
+  padding: 4rem;
+}
+.boton {
+  background-color: #ffffff;
+  color: #303030;
+  border-radius: 1rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border-style: solid;
+}
+
+/*------Footer------*/
+footer {
+  background-color: #141e05;
+  width: 100%;
+  color: #ffffff;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: absolute;
+  left: 0%;
+  bottom: auto;
+}
+.iconos {
+  filter: invert(100%);
+  width: 3rem;
+}
+.redesFooter li {
+  float: left;
+  margin: 0.5rem;
+  margin-top: 3rem;
+  list-style-type: none;
+  image-rendering: optimizeQuality;
+}
+.copyright {
+  float: right;
+  text-align: center;
+}
+.copyright li {
+  image-rendering: optimizeQuality;
+  margin-bottom: -1rem;
+  list-style-type: none;
+}
