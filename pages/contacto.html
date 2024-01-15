@@ -57,79 +57,42 @@
       <div class="redes">
         <ul>
           <li>
-            <a href="https://www.instagram.com/" target="_blank"
-              ><img
-                src="../img/instagram.png"
-                class="iconos"
-                style="height: 8rem"
-                alt="logo-instagram"
-            /></a>
-            <p>Instagram</p>
+            <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" class="iconopagina" alt="logo-instagram" /></a>
           </li>
           <br />
           <li>
-            <a
-              href="https://api.whatsapp.com/send?phone=543764996227"
-              target="_blank"
-              ><img
-                src="../img/whatsapp.png"
-                class="iconos"
-                style="height: 8rem"
-                alt="logo-whatsapp"
-            /></a>
-            <p>WhatsApp</p>
+            <a href="https://api.whatsapp.com/send?phone=543764996227" target="_blank"><img src="../img/whatsapp.png" class="iconopagina" alt="logo-whatsapp" /></a>
           </li>
           <br />
           <li>
-            <a href="https://www.facebook.com/" target="_blank"
-              ><img
-                src="../img/facebook.png"
-                class="iconos"
-                style="height: 8rem"
-                alt="logo-facebook"
-            /></a>
-            <p>Facebook</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" class="iconopagina" alt="logo-facebook"/></a>
           </li>
         </ul>
       </div>
-      <div class="contenedorMapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2504.789579264746!2d-55.90450277664192!3d-27.397337938980684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIzJzQ3LjIiUyA1NcKwNTQnMjAuOSJX!5e0!3m2!1ses-419!2sar!4v1701640819598!5m2!1ses-419!2sar"
-          width="90%"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          class="mapa"
-        ></iframe>
-        <p>Visitanos en: Av. Ramón Martirenez 5336, Posadas - Misiones.</p>
-      </div>
-      <br />
-      <form class="formularioDeContacto">
-        <p>
+      <section class="mapaycontacto">
+        <div class="contenedorMapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2504.789579264746!2d-55.90450277664192!3d-27.397337938980684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIzJzQ3LjIiUyA1NcKwNTQnMjAuOSJX!5e0!3m2!1ses-419!2sar!4v1701640819598!5m2!1ses-419!2sar" width="90%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe><p>Visitanos en: Av. Ramón Martirenez 5336, Posadas - Misiones.</p>
+        </div>
+        <form class="formularioDeContacto">
+          <p>
           ¡Dejanos tu mensaje y nos pondremos en contacto cons vos para resolver
           cualquier duda!
-        </p>
-        <div>
-          <label for="nombre">Nombre</label>
-          <input type="text" placeholder="Juan" id="nombre" />
-        </div>
-        <br />
-        <div>
-          <label for="correo">Correo</label>
-          <input type="email" placeholder="@" id="correo" />
-        </div>
-        <br />
-        <div>
-          <label for="mensaje">Mensaje</label>
-          <textarea name="" id="mensaje" cols="50" rows="10"></textarea>
-        </div>
-        <br />
-        <button id="submitBtn" type="submit" class="btn btn-primary">
-          Enviar
-        </button>
-      </form>
+          </p>
+          <div>
+            <label for="nombre">Nombre</label><input type="text" placeholder="Juan" id="nombre" />
+          </div>
+          <br />
+          <div>
+            <label for="correo">Correo</label><input type="email" placeholder="@" id="correo" />
+          </div>
+          <br />
+          <div>
+            <label for="mensaje">Mensaje</label><textarea name="" id="mensaje" cols="50" rows="10"></textarea>
+          </div>
+          <br />
+          <button id="submitBtn" type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
     </main>
     <!--Footer-->
     <footer class="footer">
