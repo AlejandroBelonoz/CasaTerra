@@ -5,11 +5,14 @@ body {
   font-family: "Overpass", sans-serif;
   color: #303030;
   margin: 0;
-  background-image: url(../img/5392320.jpg);
-  backdrop-filter: blur(15px);
+  background-image: url(../img/leaves-6629581_640.png);
+  backdrop-filter: blur(8px);
 }
+
 main {
   padding: 0rem 6rem 4rem 6rem;
+  min-height: 100vh;
+  position: relative;
 }
 h1 {
   font-size: 3rem;
@@ -71,7 +74,7 @@ nav > div {
   /*grid-template-columns: 1, 2fr; /* Dos columnas iguales */
   gap: 1rem; /* Espaciado entre columnas */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+  
 }
 .nosotrosMedia {
   margin-left: 2rem;
@@ -191,12 +194,11 @@ nav > div {
   background-color: rgba(20, 30, 5, 0.6);
   backdrop-filter: blur(35px);
   width: 100%;
+  display: flex;
   color: #ffffff;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  position: absolute;
-  left: 0%;
-  bottom: auto;
+  
 }
 .iconos {
   filter: invert(100%);
@@ -217,4 +219,8 @@ nav > div {
   image-rendering: optimizeQuality;
   margin-bottom: -1rem;
   list-style-type: none;
+}
+#h6Copyright {
+  font-size: 10px;
+  padding-top: 1rem;
 }
