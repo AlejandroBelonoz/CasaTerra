@@ -4,23 +4,23 @@ body {
   font-size: 16px;
   font-family: "Overpass", sans-serif;
   color: #303030;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background-image: url(../img/wallpaper.png);
   backdrop-filter: blur(8px);
 }
 
 main {
   padding: 0rem 6rem 4rem 6rem;
-  min-height: 100vh;
-  position: relative;
+  height:100vh
 }
 h1 {
-  font-size: 3rem;
-  margin-left: 4rem;
+  font-size: 25px;
+  margin-left: 10%;
 }
 
 /*------Header------*/
-
 header {
   width: 100%;
   position: fixed;
@@ -64,17 +64,16 @@ nav > div {
 #linea {
   border-color: #303030;
   border-style: dashed;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
-
-.contenido {
+.contenidopaginaprincipal {
   display: grid;
-  /*grid-template-columns: 1, 2fr; /* Dos columnas iguales */
-  gap: 1rem; /* Espaciado entre columnas */
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  
+  padding: 0;
+  margin: 5%;
 }
 .nosotrosMedia {
   display: flex;
@@ -82,40 +81,49 @@ nav > div {
   align-items: center;
   border-radius: 1rem;
 }
-
 .nosotrosTexto {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-}*/
+}
 
 /*------Página Consejos------*/
 .contenidoConsejos {
   padding-left: 10%;
   padding-right: 10%;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /*------Página Productos------*/
+.contenidoproductos {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  padding: 0;
+  margin: 3%;
+}
 .contenedorCategoria {
+  display: inline-block;
+  height: fit-content;
+  width:fit-content;
+  border: 2px solid #ffffff;
+  text-align: center;
+  vertical-align: middle;
   background-color: #141e05;
-  border-radius: 3rem;
-  border: #ffffff;
-  border-style: solid;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 2cm;
+  border-radius: 1rem;
+  color: #ffffff;
+  list-style-type: none;
+  image-rendering: optimizeQuality;
   text-align: center;
 }
 .imagenCategoria {
   border: #ffffff;
-  border-radius: 1cm;
+  border-radius: 1rem;
   border-style: solid;
-  margin-top: 1cm;
-  margin-left: 1cm;
-  margin-right: 1cm;
-  width: 10cm;
+  margin: 1rem 0;
+  width: 95%;
 }
 .tituloCategoria {
   color: #ffffff;
@@ -123,22 +131,20 @@ nav > div {
 }
 
 /*------Página Contacto------*/
-
 .contenidocontacto {
   display: grid;
-  /*grid-template-columns: 1, 2fr; /* Dos columnas iguales */
-  gap: 1rem; /* Espaciado entre columnas */
+  gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
 }
 .redes ul li {
-  display: inline-block;
-  margin: 10px; /* Ajusta el margen entre elementos si es necesario */
-  border: 2px solid #ffffff; /* Opcional: añade un borde para visualización */
-  padding: 1rem 1rem; /* Opcional: añade relleno para visualización */
+  display: flex;
+  margin: 1rem;
+  border: 2px solid #ffffff;
+  padding: 1rem 1rem;
   text-align: center;
   vertical-align: middle;
   background-color: #141e05;
- 
   border-radius: 1rem;
   color: #ffffff;
   list-style-type: none;
@@ -151,15 +157,13 @@ nav > div {
 }
 .contenedorMapa {
   display: inline-block;
+  display:flex;
   margin-right: 10px; 
   border: 2px solid #ffffff; 
   padding: 1rem 1rem; 
   background-color: #141e05;
   border-radius: 1rem;
   text-align: center;
-  /*margin-left: 10%;
-  margin-right: 10%;
-  padding-top: 3rem;*/
   font-size: x-large;
   color: #ffffff;
 }
@@ -173,11 +177,6 @@ nav > div {
   padding: 1rem 1rem; 
   background-color: #141e05;
   border-radius: 1rem;
- /* margin-left: 10%;
-  margin-right: 10%;
-  padding: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;*/
   font-size: x-large;
   color: #ffffff;
 }
@@ -194,20 +193,24 @@ nav > div {
   font-size: x-large;
   text-align: center;
 }
+.contenidoregistro {
+  padding: 0;
+}
 .contenedorRegistro {
   background-color: #141e05;
-  border-radius: 3rem;
+  border-radius: 1rem;
+  padding: 1rem;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 2cm;
   text-align: justify;
   color: #ffffff;
-  padding: 4rem;
+  margin: 3%;
 }
 .boton {
   background-color: #ffffff;
   color: #303030;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   border-style: solid;
@@ -218,33 +221,53 @@ nav > div {
   background-color: rgba(20, 30, 5, 0.6);
   backdrop-filter: blur(35px);
   width: 100%;
-  display:inline-block;
+  display:flex;
+  justify-content: space-between;
   color: #ffffff;
   border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
-  
+  border-top-left-radius: 1rem; 
 }
 .iconos {
   filter: invert(100%);
   width: 3rem;
 }
-.redesFooter li {
-  float: left;
+.redesFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redesFooter ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.redesFooter li{
+  display:inline-flex;
   margin: 0.5rem;
-  margin-top: 3rem;
   list-style-type: none;
   image-rendering: optimizeQuality;
 }
 .copyright {
-  float: right;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.copyright ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 .copyright li {
-  image-rendering: optimizeQuality;
-  margin-bottom: -1rem;
+  display:inline-flex;
+  justify-content: center;
   list-style-type: none;
+  image-rendering: optimizeQuality;
 }
 #h6Copyright {
+  text-align: center;
   font-size: 10px;
-  padding-top: 1rem;
+  padding: 0;
+  margin: 0;
 }
