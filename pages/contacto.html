@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-lg bg-transparent mt-2">
       <div class="container-fluid container-lg" id="round-onclick">
         <a class="logo d-lg-none d-block text-decoration-none" href="../index.html">
-          <img class="logoCasaTerra" src="../img/logoCasaTerra2.svg" alt="Logo de la marca" />
+          <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca" />
         </a>
         <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -28,23 +28,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <a class="logo d-lg-block me-auto text-decoration-none d-none" href="../index.html">
-            <img class="logoCasaTerra" src="../img/logoCasaTerra2.svg" alt="Logo de la marca" />
+            <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca" />
           </a>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/consejos.html">Consejos</a>
+              <a class="nav-link" href="./consejos.html">Consejos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/productos.html">Productos</a>
+              <a class="nav-link" href="./productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../pages/registro.html">Registro</a>
+              <a class="nav-link" href="./registro.html">Registro</a>
             </li>
           </ul>
         </div>
@@ -54,55 +54,42 @@
   <!--Contenido-->
   
   <h1 class="titulo">Encontranos en</h1>
-  <hr id="linea" />
+  <!--<hr id="linea" />-->
 
   <main class="contenidocontacto">
-    <div class="redes">
-      <ul>
-        <li>
-          <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" class="iconopagina"
-              alt="logo-instagram" /></a>
-        </li>
-        <br />
-        <li>
-          <a href="https://api.whatsapp.com/send?phone=543764996227" target="_blank"><img src="../img/whatsapp.png"
-              class="iconopagina" alt="logo-whatsapp" /></a>
-        </li>
-        <br />
-        <li>
-          <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" class="iconopagina"
-              alt="logo-facebook" /></a>
-        </li>
-      </ul>
-    </div>
-    <section class="mapaycontacto">
-      <div class="contenedorMapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2504.789579264746!2d-55.90450277664192!3d-27.397337938980684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIzJzQ3LjIiUyA1NcKwNTQnMjAuOSJX!5e0!3m2!1ses-419!2sar!4v1701640819598!5m2!1ses-419!2sar"
-          width="90%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-        <p>Visitanos en: Av. Ramón Martirenez 5336, Posadas - Misiones.</p>
+    <div class="infocontacto">
+      <div class="inforedes">
+        <div class="sociales">
+          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" class="iconopagina"                                  alt="logo-instagram" /></a>
+          <a href="https://api.whatsapp.com/send?phone=543764996227" target="_blank"><img src="../assets/whatsapp.png" class="iconopagina" alt="logo-whatsapp" /></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" class="iconopagina"                                    alt="logo-facebook" /></a>
+        </div>
       </div>
-      <form class="formularioDeContacto">
-        <p>
-          ¡Dejanos tu mensaje y nos pondremos en contacto cons vos para resolver
-          cualquier duda!
-        </p>
-        <div>
-          <label for="nombre">Nombre</label><input type="text" placeholder="Juan" id="nombre" />
+      <div class="mapaycontacto">
+        <div class="contenedorMapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2504.789579264746!2d-55.90450277664192!3d-27.397337938980684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDIzJzQ3LjIiUyA1NcKwNTQnMjAuOSJX!5e0!3m2!1ses-419!2sar!4v1701640819598!5m2!1ses-419!2sar" width="90%" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+          <p>Visitanos en: Av. Ramón Martirenez 5336, Posadas - Misiones.</p>
         </div>
-        <br />
-        <div>
-          <label for="correo">Correo</label><input type="email" placeholder="@" id="correo" />
+      </div>
+    </div>
+      
+    <!-- Formulario de contacto -->
+    <div class="contact">
+      <h3 class="heading">Escribenos</h3>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Nombre">
+          <input type="text" placeholder="Apellido">
         </div>
-        <br />
-        <div>
-          <label for="mensaje">Mensaje</label><textarea name="" id="mensaje" cols="50" rows="5"></textarea>
+        <div class="input-box">
+          <input type="tel" placeholder="Teléfono">
+          <input type="email" placeholder="Email">
         </div>
-        <br />
-        <button id="submitBtn" type="submit" class="btn btn-primary">Enviar</button>
+        <textarea class="message" name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje..."></textarea>
+        <input type="submit" value="Enviar" class="btn">
       </form>
-    </section>
+    </div>
+
   </main>
 
   <!--Footer-->
@@ -110,27 +97,27 @@
     <section class="redesFooter">
       <ul>
         <li>
-          <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png" class="iconos"
+          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/instagram.png" class="iconos"
               alt="logo-instagram" /></a>
         </li>
         <li>
-          <a href="https://api.whatsapp.com/send?phone=543764996227" target="_blank"><img src="../img/whatsapp.png"
+          <a href="https://api.whatsapp.com/send?phone=543764996227" target="_blank"><img src="../assets/whatsapp.png"
               class="iconos" alt="logo-whatsapp" /></a>
         </li>
         <li>
-          <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png" class="iconos"
+          <a href="https://www.facebook.com/" target="_blank"><img src="../assets/facebook.png" class="iconos"
               alt="logo-facebook" /></a>
         </li>
-        <li>
+        <!--<li>
           <a href="https://maps.app.goo.gl/QGwfQEM33XQxUiqM8" target="_blank"><img src="../img/localizacion.png"
               class="iconos" alt="logo-gps" /></a>
-        </li>
+        </li>-->
       </ul>
     </section>
     <section class="copyright">
       <ul>
         <li>
-          <img src="../img/logoCasaTerra2.svg" style="height: 7rem" alt="logo-casaterra" class="logofooter" />
+          <img src="../assets/logoCasaTerra2.svg" style="height: 7rem" alt="logo-casaterra" class="logofooter" />
         </li>
         <li>
           <h6 id="h6Copyright">Copyright 2023 Casa Terra</h6>

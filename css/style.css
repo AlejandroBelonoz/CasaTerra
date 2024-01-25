@@ -3,21 +3,32 @@
 body {
   font-size: 16px;
   font-family: "Overpass", sans-serif;
-  color: #303030;
-  display: flex;
+  /*color: #303030;*/
+  color:#ffffff;
   flex-direction: column;
+  /*background-image: url(../img/wallpaper.png);*/
+  background-color: #081009;
+  /*backdrop-filter: blur(8px);*/
+  width: 100%;
   min-height: 100vh;
-  background-image: url(../img/wallpaper.png);
-  backdrop-filter: blur(8px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
 }
 
 main {
-  padding: 0rem 6rem 4rem 6rem;
-  height:100vh
+  min-height:100vh;
+  justify-content: center;
+  margin: 4rem 4rem 2rem 4rem;
+  /*position: relative;*/
 }
+
 h1 {
-  font-size: 25px;
+  font-size: 2rem;
   margin-left: 10%;
+}
+h3 {
+  font-size: 1.5rem;
 }
 
 /*------Header------*/
@@ -59,8 +70,9 @@ nav > div {
 
 /*------Página principal------*/
 .titulo {
-  padding-top: 8rem;
+  padding-top: 9rem;
 }
+
 #linea {
   border-color: #303030;
   border-style: dashed;
@@ -72,27 +84,31 @@ nav > div {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 0;
-  margin: 5%;
+  justify-items: center;
 }
 .nosotrosMedia {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   border-radius: 1rem;
+  max-width: 80%;
 }
 .nosotrosTexto {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-size: 20px;
+  align-items:start;
+  font-size: 1.5rem;
+  max-width: auto;
 }
 
 /*------Página Consejos------*/
 .contenidoConsejos {
+  /*padding-top: 1rem;
   padding-left: 10%;
-  padding-right: 10%;
-  font-size: 1rem;
+  padding-right: 10%;*/
+  margin-top: 4rem;
+  font-size: 18px;
+  padding: 0 2rem;
 }
 
 /*------Página Productos------*/
@@ -101,8 +117,9 @@ nav > div {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: auto;
-  padding: 0;
-  margin: 3%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
 }
 .contenedorCategoria {
   display: inline-block;
@@ -111,7 +128,7 @@ nav > div {
   border: 2px solid #ffffff;
   text-align: center;
   vertical-align: middle;
-  background-color: #141e05;
+  background-color: #141e0500;
   border-radius: 1rem;
   color: #ffffff;
   list-style-type: none;
@@ -135,30 +152,40 @@ nav > div {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+  padding: 0 2rem;
+  margin: 4rem 0;
 }
-.redes ul li {
-  display: flex;
-  margin: 1rem;
-  border: 2px solid #ffffff;
-  padding: 1rem 1rem;
-  text-align: center;
-  vertical-align: middle;
+.infocontacto {
+    display: flex;
+    align-content: stretch;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+}
+.inforedes {
+  border: 2px solid #ffffff; 
+  padding: 1rem 1rem; 
   background-color: #141e05;
   border-radius: 1rem;
-  color: #ffffff;
-  list-style-type: none;
-  image-rendering: optimizeQuality;
 }
+
+.sociales {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
 .iconopagina {
   width: 5rem;
   height: 5rem;
   filter: invert(100%);
 }
+
 .contenedorMapa {
-  display: inline-block;
-  display:flex;
-  margin-right: 10px; 
+  width: 100%;
+  height: auto;
   border: 2px solid #ffffff; 
   padding: 1rem 1rem; 
   background-color: #141e05;
@@ -170,7 +197,8 @@ nav > div {
 .mapa {
   border-radius: 2rem;
 }
-.formularioDeContacto {
+
+.contact {
   display: inline-block;
   margin-right: 10px; 
   border: 2px solid #ffffff; 
@@ -180,13 +208,56 @@ nav > div {
   font-size: x-large;
   color: #ffffff;
 }
-#submitBtn {
-  background-color: #ffffff;
-  padding: 1rem;
-  border-radius: 1rem;
-  font-size: x-large;
-  font-family: "Overpass", sans-serif;
+
+.contact {
+  min-height: auto;
 }
+
+.contact form {
+  width: auto;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea  {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #000000;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  border-color: transparent;
+}
+
+.contact form .input-box input {
+  width: 49%;
+}
+
+.contact form textarea {
+  resize: none;
+}
+
+.contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  background: var(--primary-color);
+  border-color: #ffffff;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+}
+
+
 
 /*------Página Registro------*/
 .parrafoRegistro {
@@ -218,11 +289,14 @@ nav > div {
 
 /*------Footer------*/
 .footer {
-  background-color: rgba(20, 30, 5, 0.6);
+  padding-bottom: 1rem !important;
+  background-color: rgba(20, 30, 5, 0.6) !important;
   backdrop-filter: blur(35px);
+
+
   width: 100%;
   display:flex;
-  justify-content: space-between;
+  justify-content:space-between;
   color: #ffffff;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem; 
@@ -231,7 +305,9 @@ nav > div {
   filter: invert(100%);
   width: 3rem;
 }
+
 .redesFooter {
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
