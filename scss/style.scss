@@ -1,0 +1,20 @@
+//Configuraciones principales
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+@import "base/_body";
+
+//header
+@import "layout/header";
+
+//main
+@import "components/titulo";
+@import "components/lineaSeparadora";
+@import "layout/main";
+
+
+
+
+//footer
+@import "layout/footer";
+
+
+

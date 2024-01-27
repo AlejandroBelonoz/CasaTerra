@@ -1,0 +1,53 @@
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+    #navbar {
+        background-color: #141e05 !important;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        margin:0 !important;
+        padding: 2rem 0;
+        
+        .logoCasaTerra {
+          padding: 0;
+          margin: 0;
+          height: 4rem;
+          image-rendering: optimizeQuality;
+        }
+
+        a {
+          margin: 0;
+        }
+    }
+
+    
+}
+.collapse:not(.show) .nav-link {
+  font-size: 1.1rem;
+  color: #ffffff !important;
+  padding: 0 1.5rem !important;
+}
+
+.menu:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  color: #ffffff !important;
+}
+
+
+.menu i {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+   
+    
+    
+      
+      
+      
+      
+      

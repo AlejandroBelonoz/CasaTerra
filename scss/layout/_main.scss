@@ -1,0 +1,116 @@
+//Pagina principal
+main {
+    min-height:100vh;
+    justify-content: center;
+    margin: 4rem 4rem 2rem 4rem;
+    /*position: relative;*/
+  }
+.contenidopaginaprincipal {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 4rem 2rem;
+
+    .nosotrosMedia {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        border-radius: 1rem;
+        max-width: 80%;
+      }
+      .nosotrosTexto {
+        display: flex;
+        justify-content: center;
+        align-items:start;
+        font-size: 1rem;
+        color: #303030;
+        max-width: auto;
+      }
+  }
+
+//Consejos
+.contenidoConsejos {
+    /*padding-top: 1rem;
+    padding-left: 10%;
+    padding-right: 10%;*/
+    margin-top: 4rem;
+    font-size: 18px;
+    padding: 0 2rem;
+    color: #303030;
+  }
+
+//Productos
+.contenidoproductos {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+        .contenedorCategoria {
+        display: inline-block;
+        height: fit-content;
+        width:fit-content;
+
+        text-align: center;
+        vertical-align: middle;
+        background-color:#141E0599;
+        border-radius: 1rem;
+        color: #ffffff;
+        list-style-type: none;
+        text-align: center;
+        .imagenCategoria {
+            border-radius: 1rem;
+            margin: 1rem 0;
+            width: 99%;
+          }
+          .tituloCategoria {
+            color: #ffffff;
+            font-size: 25px;
+          }
+    }
+  }
+//Contacto  
+.contenidocontacto {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 0 2rem;
+    margin: 4rem 0;
+    
+    .infocontacto {
+        display: flex;
+        align-content: stretch;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        height: 100%;
+
+        .inforedes {
+            border: 2px solid #ffffff; 
+            padding: 1rem 1rem; 
+            background-color: #141e05;
+            border-radius: 1rem;
+          }
+
+
+    }
+
+    .contact {
+        display: inline-block;
+        margin-right: 10px; 
+        border: 2px solid #ffffff; 
+        padding: 1rem 1rem; 
+        background-color: #141e05;
+        border-radius: 1rem;
+        font-size: x-large;
+        color: #ffffff;
+        min-height: auto;
+      }
+  }
+
+
+  
+  
