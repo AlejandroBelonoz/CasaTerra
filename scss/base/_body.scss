@@ -1,13 +1,16 @@
 body {
     font-size: 16px;
     font-family: "Overpass", sans-serif;
-    color:#303030;
+    color:#604848;
     flex-direction: column;
-    background-image: url(../../assets/wallpaper.png);
-    backdrop-filter: blur(8px);
+    background-color: #f0f0d8;
     width: 100%;
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
   }
+  h3 {
+    font-size: 1.5rem;
+  }
+  

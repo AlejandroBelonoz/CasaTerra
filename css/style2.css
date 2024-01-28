@@ -1,156 +1,47 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
-
-body {
-  font-size: 16px;
-  font-family: "Overpass", sans-serif;
-  /*color: #303030;*/
-  color:#ffffff;
-  flex-direction: column;
-  /*background-image: url(../img/wallpaper.png);*/
-  background-color: #081009;
-  /*backdrop-filter: blur(8px);*/
-  
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr auto;
-}
-
-
-
-h1 {
-  font-size: 2rem;
-  margin-left: 10%;
-}
-h3 {
-  font-size: 1.5rem;
-}
 
 /*------Header------*/
 
-
-
-
-
 /*------Página principal------*/
-
 
 /*------Página Consejos------*/
 
-
 /*------Página Productos------*/
-
 
 /*------Página Contacto------*/
 
 
 
 
-.sociales {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1.4rem;
-}
-
-.iconopagina {
-  width: 5rem;
-  height: 5rem;
-  filter: invert(100%);
-}
-
-.contenedorMapa {
-  width: 100%;
-  height: auto;
-  border: 2px solid #ffffff; 
-  padding: 1rem 1rem; 
-  background-color: #141e05;
-  border-radius: 1rem;
-  text-align: center;
-  font-size: x-large;
-  color: #ffffff;
-}
-.mapa {
-  border-radius: 2rem;
-}
 
 
 
 
 
-.contact form {
-  width: auto;
-  margin: 1rem auto;
-  text-align: center;
-}
 
-.contact form .input-box {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+
+
+
+
+
+.contact 
+
+.contact form 
 
 .contact form .input-box input,
-.contact form textarea  {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  color: #000000;
-  border-radius: .8rem;
-  margin: .7rem 0;
-  border-color: transparent;
-}
+.contact 
 
-.contact form .input-box input {
-  width: 49%;
-}
+.contact form .input-box 
 
 .contact form textarea {
-  resize: none;
+  
 }
 
-.contact form .btn {
-  margin-top: 2rem;
-  cursor: pointer;
-  color: #ffffff;
-  background: var(--primary-color);
-  border-color: #ffffff;
-}
-
-.contact input:focus,
-.contact textarea:focus {
-  outline: none;
-}
+.contact ,
+.contact 
 
 
 
 /*------Página Registro------*/
-.parrafoRegistro {
-  font-size: x-large;
-  text-align: center;
-}
-.contenidoregistro {
-  padding: 0;
-}
-.contenedorRegistro {
-  background-color: #141e05;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: 2cm;
-  text-align: justify;
-  color: #ffffff;
-  margin: 3%;
-}
-.boton {
-  background-color: #ffffff;
-  color: #303030;
-  border-radius: 0.5rem;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  border-style: solid;
-}
+
 
 /*------Footer------*/
-

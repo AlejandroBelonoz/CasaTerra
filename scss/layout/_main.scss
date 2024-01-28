@@ -76,9 +76,10 @@ main {
 .contenidocontacto {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     padding: 0 2rem;
     margin: 4rem 0;
+    height: fit-content !important;
     
     .infocontacto {
         display: flex;
@@ -86,31 +87,143 @@ main {
         flex-direction: column;
         gap: 2rem;
         width: 100%;
-        height: 100%;
+        height:fit-content;
 
         .inforedes {
             border: 2px solid #ffffff; 
             padding: 1rem 1rem; 
-            background-color: #141e05;
+            background-color: #607848;
             border-radius: 1rem;
+
+            .sociales {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                gap: 1.4rem;
+
+                .iconopagina {
+                    width: 5rem;
+                    height: 5rem;
+                    filter: invert(100%);
+                  } 
+              }
           }
 
+          .contenedorMapa {
+            width: 100%;
+            height:fit-content;
+            border: 2px solid #ffffff; 
+            padding: 1rem 1rem; 
+            background-color: #607848;
+            border-radius: 1rem;
+            text-align: center;
+            font-size: x-large;
+            color: #ffffff;
+
+            .mapa {
+                border-radius: 1rem;
+              }
+
+            P {
+                margin: 0%;
+            }
+          }
 
     }
 
     .contact {
-        display: inline-block;
-        margin-right: 10px; 
+        display: inline-block; 
         border: 2px solid #ffffff; 
         padding: 1rem 1rem; 
-        background-color: #141e05;
+        background-color: #607848;
         border-radius: 1rem;
         font-size: x-large;
         color: #ffffff;
-        min-height: auto;
+        height: fit-content;
+
+                  
+          label, input, textarea {
+            display: block;
+            width: 100%;
+            font-size: 12pt;
+            line-height: 24pt;
+            
+          }
+          
+          input {
+            margin-bottom: 24pt;
+          }
+          
+          span {
+            font-size: 8pt;
+          }
+          
+          em {
+            color: #fEC195;
+            
+          }
+          
+          input, textarea {
+            border: none;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 2px;
+            background: #f0f0d8;
+            padding-left: 5px;
+            outline: none;
+          }
+          
+          input:focus, textarea:focus {
+            border: 1px solid #FEC195;
+          }
+          
+          textarea {
+            resize: none;
+            margin-bottom: 2rem;
+          }
+                    
+          ::selection {
+            background: #ffc7b8;
+          }
+          
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus,
+          textarea:-webkit-autofill,
+          textarea:-webkit-autofill:hover,
+          textarea:-webkit-autofill:focus {
+            border: 1px solid #FEC195;
+            -webkit-text-fill-color: #2A293E;
+            -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+            transition: background-color 5000s ease-in-out 0s;
+          }
       }
+    .contenedorEnviar{
+        display: flex;
+        justify-content: center;
+    }  
   }
 
 
+
+  //Registro
+
+  /*.parrafoRegistro {
+    font-size: x-large;
+    text-align: center;
+  }*/
+  .contenidoregistro {
+    
+  }
+  .contenedorRegistro {
+    display: inline-block;
+    
+    border: 2px solid #ffffff; 
+    padding: 1rem 1rem; 
+    background-color: #607848;
+    border-radius: 1rem;
+    font-size: x-large;
+    color: #ffffff;
+    
+    }
   
   

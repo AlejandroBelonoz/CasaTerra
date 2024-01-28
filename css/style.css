@@ -2,15 +2,18 @@
 body {
   font-size: 16px;
   font-family: "Overpass", sans-serif;
-  color: #303030;
+  color: #604848;
   flex-direction: column;
-  background-image: url(../../assets/wallpaper.png);
-  backdrop-filter: blur(8px);
+  background-color: #f0f0d8;
   width: 100%;
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 header {
@@ -19,11 +22,10 @@ header {
   z-index: 1;
 }
 header #navbar {
-  background-color: #141e05 !important;
+  background-color: #607848 !important;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   margin: 0 !important;
-  padding: 2rem 0;
 }
 header #navbar .logoCasaTerra {
   padding: 0;
@@ -56,10 +58,12 @@ header #navbar a {
 
 .titulo {
   padding-top: 9rem;
+  font-size: 2rem;
+  margin-left: 10%;
 }
 
 #linea {
-  border-color: #303030;
+  border-color: #604848;
   border-style: dashed;
   margin-left: 5%;
   margin-right: 5%;
@@ -139,9 +143,10 @@ main {
 .contenidocontacto {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 0 2rem;
   margin: 4rem 0;
+  height: fit-content !important;
 }
 .contenidocontacto .infocontacto {
   display: flex;
@@ -149,30 +154,279 @@ main {
   flex-direction: column;
   gap: 2rem;
   width: 100%;
-  height: 100%;
+  height: fit-content;
 }
 .contenidocontacto .infocontacto .inforedes {
   border: 2px solid #ffffff;
   padding: 1rem 1rem;
-  background-color: #141e05;
+  background-color: #607848;
   border-radius: 1rem;
+}
+.contenidocontacto .infocontacto .inforedes .sociales {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+.contenidocontacto .infocontacto .inforedes .sociales .iconopagina {
+  width: 5rem;
+  height: 5rem;
+  filter: invert(100%);
+}
+.contenidocontacto .infocontacto .contenedorMapa {
+  width: 100%;
+  height: fit-content;
+  border: 2px solid #ffffff;
+  padding: 1rem 1rem;
+  background-color: #607848;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: x-large;
+  color: #ffffff;
+}
+.contenidocontacto .infocontacto .contenedorMapa .mapa {
+  border-radius: 1rem;
+}
+.contenidocontacto .infocontacto .contenedorMapa P {
+  margin: 0%;
 }
 .contenidocontacto .contact {
   display: inline-block;
-  margin-right: 10px;
   border: 2px solid #ffffff;
   padding: 1rem 1rem;
-  background-color: #141e05;
+  background-color: #607848;
   border-radius: 1rem;
   font-size: x-large;
   color: #ffffff;
-  min-height: auto;
+  height: fit-content;
+}
+.contenidocontacto .contact label, .contenidocontacto .contact input, .contenidocontacto .contact textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+}
+.contenidocontacto .contact input {
+  margin-bottom: 24pt;
+}
+.contenidocontacto .contact span {
+  font-size: 8pt;
+}
+.contenidocontacto .contact em {
+  color: #fEC195;
+}
+.contenidocontacto .contact input, .contenidocontacto .contact textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f0f0d8;
+  padding-left: 5px;
+  outline: none;
+}
+.contenidocontacto .contact input:focus, .contenidocontacto .contact textarea:focus {
+  border: 1px solid #FEC195;
+}
+.contenidocontacto .contact textarea {
+  resize: none;
+  margin-bottom: 2rem;
+}
+.contenidocontacto .contact ::selection {
+  background: #ffc7b8;
+}
+.contenidocontacto .contact input:-webkit-autofill,
+.contenidocontacto .contact input:-webkit-autofill:hover,
+.contenidocontacto .contact input:-webkit-autofill:focus,
+.contenidocontacto .contact textarea:-webkit-autofill,
+.contenidocontacto .contact textarea:-webkit-autofill:hover,
+.contenidocontacto .contact textarea:-webkit-autofill:focus {
+  border: 1px solid #FEC195;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.contenidocontacto .contenedorEnviar {
+  display: flex;
+  justify-content: center;
+}
+
+/*.parrafoRegistro {
+  font-size: x-large;
+  text-align: center;
+}*/
+.contenedorRegistro {
+  display: inline-block;
+  border: 2px solid #ffffff;
+  padding: 1rem 1rem;
+  background-color: #607848;
+  border-radius: 1rem;
+  font-size: x-large;
+  color: #ffffff;
+}
+
+.botonanimado {
+  position: relative;
+  padding: 15px 45px;
+  background: #fec195;
+  font-size: 17px;
+  font-weight: 500;
+  color: #604848;
+  cursor: pointer;
+  border: 1px solid #fec195;
+  border-radius: 8px;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.2));
+}
+
+.botonanimado:hover {
+  border: 1px solid #f3b182;
+  background: linear-gradient(85deg, #fec195, #fcc196, #fabd92, #fac097, #fac39c);
+  animation: wind 2s ease-in-out infinite;
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0% 50%;
+  }
+  0% {
+    background-position: 50% 100%;
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+}
+.icon-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  transform-origin: 0 0;
+  transform: rotate(10deg);
+  transition: all 0.5s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.3));
+}
+
+button:hover .icon-1 {
+  animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+  transform: rotate(10deg);
+}
+
+@keyframes slay-1 {
+  0% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+.icon-2 {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  width: 12px;
+  transform-origin: 50% 0;
+  transform: rotate(10deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+button:hover .icon-2 {
+  animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+.icon-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  transform-origin: 50% 0;
+  transform: rotate(-5deg);
+  transition: all 1s ease-in-out;
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+}
+
+button:hover .icon-3 {
+  animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+  transform: rotate(0);
+}
+
+@keyframes slay-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+form label, form input, form textarea {
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 24pt;
+}
+form input {
+  margin-bottom: 24pt;
+}
+form span {
+  font-size: 8pt;
+}
+form em {
+  color: #fEC195;
+}
+form input, form textarea {
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  background: #f0f0d8;
+  padding-left: 5px;
+  outline: none;
+}
+form input:focus, form textarea:focus {
+  border: 1px solid #FEC195;
+}
+form textarea {
+  resize: none;
+  margin-bottom: 2rem;
+}
+form ::selection {
+  background: #ffc7b8;
+}
+form input:-webkit-autofill,
+form input:-webkit-autofill:hover,
+form input:-webkit-autofill:focus,
+form textarea:-webkit-autofill,
+form textarea:-webkit-autofill:hover,
+form textarea:-webkit-autofill:focus {
+  border: 1px solid #FEC195;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.contenedorEnviar {
+  display: flex;
+  justify-content: center;
 }
 
 .footer {
   padding-bottom: 1rem !important;
-  background-color: rgba(20, 30, 5, 0.6) !important;
-  backdrop-filter: blur(35px);
+  background-color: #607848 !important;
   width: 100%;
   display: flex;
   justify-content: space-between;

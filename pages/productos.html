@@ -14,42 +14,53 @@
 <body>
   <!--Header-->
   <header>
-    <nav class="navbar navbar-expand-lg bg-transparent mt-2">
-      <div class="container-fluid container-lg" id="round-onclick">
-        <a class="logo d-lg-none d-block text-decoration-none" href="../index.html">
-          <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca"/>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="nav navbar navbar-expand-lg " id="navbar">
+      <!-- Navbar Desktop -->
+      <div class="container-fluid " id="round-onclick">
+        <a class="logo d-lg-none d-block text-decoration-none" href="./index.html">
+          <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca" />
         </a>
-        <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- Navbar Mobile -->
+        <button class="navbar-toggler menu border-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
           <i class="bi bi-list" id="menu"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <a class="logo d-lg-block me-auto text-decoration-none d-none" href="../index.html">
-            <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca"/>
+          <a class="logo d-lg-block me-auto text-decoration-none d-none" href="./index.html">
+            <img class="logoCasaTerra" src="../assets/logoCasaTerra2.svg" alt="Logo de la marca" />
           </a>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <!-- Nav items -->
+          <ul class="navbar-nav ms-auto mb-2 ">
             <li class="nav-item">
               <a class="nav-link" href="../index.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./consejos.html">Consejos</a>
+              <a class="nav-link" href="../pages/consejos.html">Consejos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./productos.html">Productos</a>
+              <a class="nav-link" href="../pages/productos.html">Productos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./contacto.html">Contacto</a>
+              <a class="nav-link" href="../pages/contacto.html">Contacto</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./registro.html">Registro</a>
+              <a class="nav-link" href="../pages/registro.html">Registro</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
+  
     <!--Contenido-->
-    <h1 class="titulo">Nuestros productos</h1>
-   <hr id="linea" />
+    <section class="titulo">
+      <h1>Nuestros productos</h1>
+    </section>
+    <hr id="linea" />
     <main class="contenidoproductos">
       <div class="contenedorCategoria">
         <img src="../assets/img-plantas.jpg" class="imagenCategoria" alt="plantas varias" />
