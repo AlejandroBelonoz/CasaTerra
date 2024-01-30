@@ -16,10 +16,20 @@ h3 {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .nosotrosMedia,
+  .nosotrosTexto {
+    max-width: 100%;
+  }
+  .contenidoConsejos,
+  .contenidopaginaprincipal {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+}
 header {
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 header #navbar {
   background-color: #607848 !important;
@@ -72,7 +82,7 @@ header #navbar a {
 main {
   min-height: 100vh;
   justify-content: center;
-  margin: 4rem 4rem 2rem 4rem;
+  margin: 0rem 4rem 2rem 4rem;
   /*position: relative;*/
 }
 
@@ -81,7 +91,6 @@ main {
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
-  margin: 4rem 2rem;
 }
 .contenidopaginaprincipal .nosotrosMedia {
   display: flex;
@@ -96,7 +105,7 @@ main {
   align-items: start;
   font-size: 1rem;
   color: #303030;
-  max-width: auto;
+  max-width: 80%;
 }
 
 .contenidoConsejos {
@@ -124,7 +133,7 @@ main {
   width: fit-content;
   text-align: center;
   vertical-align: middle;
-  background-color: rgba(20, 30, 5, 0.6);
+  background-color: #607848;
   border-radius: 1rem;
   color: #ffffff;
   list-style-type: none;
@@ -249,12 +258,14 @@ main {
   justify-content: center;
 }
 
-/*.parrafoRegistro {
+.contenidoregistro {
+  display: grid;
+  justify-content: center;
   font-size: x-large;
-  text-align: center;
-}*/
+}
+
 .contenedorRegistro {
-  display: inline-block;
+  align-content: center;
   border: 2px solid #ffffff;
   padding: 1rem 1rem;
   background-color: #607848;

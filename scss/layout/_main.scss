@@ -2,7 +2,7 @@
 main {
     min-height:100vh;
     justify-content: center;
-    margin: 4rem 4rem 2rem 4rem;
+    margin: 0rem 4rem 2rem 4rem;
     /*position: relative;*/
   }
 .contenidopaginaprincipal {
@@ -10,7 +10,6 @@ main {
     gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
-    margin: 4rem 2rem;
 
     .nosotrosMedia {
         display: flex;
@@ -25,7 +24,7 @@ main {
         align-items:start;
         font-size: 1rem;
         color: #303030;
-        max-width: auto;
+        max-width: 80%;
       }
   }
 
@@ -53,10 +52,9 @@ main {
         display: inline-block;
         height: fit-content;
         width:fit-content;
-
         text-align: center;
         vertical-align: middle;
-        background-color:#141E0599;
+        background-color:#607848;
         border-radius: 1rem;
         color: #ffffff;
         list-style-type: none;
@@ -207,23 +205,20 @@ main {
 
   //Registro
 
-  /*.parrafoRegistro {
-    font-size: x-large;
-    text-align: center;
-  }*/
   .contenidoregistro {
-    
+    display:grid;
+    justify-content: center;
+    font-size: x-large;    
   }
-  .contenedorRegistro {
-    display: inline-block;
-    
+  .contenedorRegistro {    
+    align-content: center;
     border: 2px solid #ffffff; 
     padding: 1rem 1rem; 
     background-color: #607848;
     border-radius: 1rem;
     font-size: x-large;
-    color: #ffffff;
-    
+    color: #ffffff;    
     }
+  
   
   
