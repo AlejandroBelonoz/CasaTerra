@@ -1,9 +1,6 @@
 //Pagina principal
 main {
-    min-height:100vh;
     justify-content: center;
-    margin: 0rem 4rem 2rem 4rem;
-    /*position: relative;*/
   }
 .contenidopaginaprincipal {
     display: grid;
@@ -12,17 +9,13 @@ main {
     justify-items: center;
 
     .nosotrosMedia {
-        display: flex;
-        justify-content: center;
-        align-items: start;
-        border-radius: 1rem;
         max-width: 80%;
       }
       .nosotrosTexto {
         display: flex;
         justify-content: center;
-        align-items:start;
-        font-size: 1rem;
+        align-items:center;
+        font-size: 20px;
         color: #303030;
         max-width: 80%;
       }
@@ -30,9 +23,6 @@ main {
 
 //Consejos
 .contenidoConsejos {
-    /*padding-top: 1rem;
-    padding-left: 10%;
-    padding-right: 10%;*/
     margin-top: 4rem;
     font-size: 18px;
     padding: 0 2rem;
@@ -74,7 +64,7 @@ main {
 .contenidocontacto {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 0 2rem;
     margin: 4rem 0;
     height: fit-content !important;
@@ -205,20 +195,24 @@ main {
 
   //Registro
 
-  .contenidoregistro {
+    .contenidoregistro {
     display:grid;
     justify-content: center;
-    font-size: x-large;    
-  }
-  .contenedorRegistro {    
-    align-content: center;
-    border: 2px solid #ffffff; 
-    padding: 1rem 1rem; 
-    background-color: #607848;
-    border-radius: 1rem;
     font-size: x-large;
-    color: #ffffff;    
+    margin: 4rem 2rem;
+
+      .contenedorRegistro {    
+        align-content: cente;
+        border: 2px solid #ffffff; 
+        padding: 1rem 1rem; 
+        background-color: #607848;
+        border-radius: 1rem;
+        font-size: x-large;
+        color: #ffffff;
+        }
     }
+
+  
   
   
   

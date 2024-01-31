@@ -21,6 +21,10 @@ h3 {
   .nosotrosTexto {
     max-width: 100%;
   }
+  .nosotrosMedia p,
+  .nosotrosTexto p {
+    font-size: 14px;
+  }
   .contenidoConsejos,
   .contenidopaginaprincipal {
     margin: 0rem 0rem 2rem 0rem;
@@ -80,10 +84,7 @@ header #navbar a {
 }
 
 main {
-  min-height: 100vh;
   justify-content: center;
-  margin: 0rem 4rem 2rem 4rem;
-  /*position: relative;*/
 }
 
 .contenidopaginaprincipal {
@@ -93,25 +94,18 @@ main {
   justify-items: center;
 }
 .contenidopaginaprincipal .nosotrosMedia {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  border-radius: 1rem;
   max-width: 80%;
 }
 .contenidopaginaprincipal .nosotrosTexto {
   display: flex;
   justify-content: center;
-  align-items: start;
-  font-size: 1rem;
+  align-items: center;
+  font-size: 20px;
   color: #303030;
   max-width: 80%;
 }
 
 .contenidoConsejos {
-  /*padding-top: 1rem;
-  padding-left: 10%;
-  padding-right: 10%;*/
   margin-top: 4rem;
   font-size: 18px;
   padding: 0 2rem;
@@ -152,7 +146,7 @@ main {
 .contenidocontacto {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 0 2rem;
   margin: 4rem 0;
   height: fit-content !important;
@@ -262,10 +256,10 @@ main {
   display: grid;
   justify-content: center;
   font-size: x-large;
+  margin: 4rem 2rem;
 }
-
-.contenedorRegistro {
-  align-content: center;
+.contenidoregistro .contenedorRegistro {
+  align-content: cente;
   border: 2px solid #ffffff;
   padding: 1rem 1rem;
   background-color: #607848;
