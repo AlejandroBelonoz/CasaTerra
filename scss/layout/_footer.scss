@@ -1,9 +1,6 @@
 .footer {
     padding-bottom: 1rem !important;
-    background-color: #607848 !important;
-  
-  
-  
+    background-color: #607848 !important;  
     width: 100%;
     display:flex;
     justify-content:space-between;
@@ -11,50 +8,66 @@
     border-top-right-radius: 1rem;
     border-top-left-radius: 1rem; 
 
-  }
-  .iconos {
-    filter: invert(100%);
-    width: 3rem;
+
+    .iconos {
+      filter: invert(100%);
+      width: 3rem;
+    }
+
+    .redesFooter {
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+  
+        li{
+          display:inline-flex;
+          margin: 0.5rem;
+          list-style-type: none;
+          image-rendering: optimizeQuality;
+        }
+      }
+  
+    }
+
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+        ul {
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+  
+            li {
+              display:inline-flex;
+              justify-content: center;
+              list-style-type: none;
+              image-rendering: optimizeQuality;
+              }
+          }
+  
+      #h6Copyright {
+        text-align: center;
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+      }
+      }
+
   }
   
-  .redesFooter {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .redesFooter ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-  .redesFooter li{
-    display:inline-flex;
-    margin: 0.5rem;
-    list-style-type: none;
-    image-rendering: optimizeQuality;
-  }
-  .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  .copyright ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-  }
-  .copyright li {
-    display:inline-flex;
-    justify-content: center;
-    list-style-type: none;
-    image-rendering: optimizeQuality;
-  }
-  #h6Copyright {
-    text-align: center;
-    font-size: 10px;
-    padding: 0;
-    margin: 0;
-  }
+  
+  
+  
+
+  
+  
+  

@@ -3,4 +3,20 @@
   border-style: dashed;
   margin-left: 5%;
   margin-right: 5%;
+
+  opacity: 0; // Set initial opacity to 0
+  transform: scaleX(0); // Initial scale transform
+
+  animation: expandFromCenter 1s ease-out forwards; // Apply the animation
+
+  @keyframes expandFromCenter {
+    from {
+      opacity: 0;
+      transform: scaleX(0); // Start with no width
+    }
+    to {
+      opacity: 1;
+      transform: scaleX(1); // Scale to full width
+    }
+  }
 }
