@@ -8,11 +8,11 @@ header {
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
         margin:0 !important;
-        
+              
         .logoCasaTerra {
           padding: 0;
           margin: 0;
-          height: 4rem;
+          width: 15rem;
           image-rendering: optimizeQuality;
         }
 
@@ -20,8 +20,6 @@ header {
           margin: 0;
         }
     }
-
-    
 }
 .collapse:not(.show) .nav-link {
   font-size: 1.1rem;

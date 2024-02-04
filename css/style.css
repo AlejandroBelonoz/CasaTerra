@@ -52,7 +52,7 @@ header #navbar {
 header #navbar .logoCasaTerra {
   padding: 0;
   margin: 0;
-  height: 4rem;
+  width: 15rem;
   image-rendering: optimizeQuality;
 }
 header #navbar a {
@@ -517,6 +517,9 @@ form textarea:-webkit-autofill:focus {
   justify-content: center;
   list-style-type: none;
   image-rendering: optimizeQuality;
+}
+.footer .copyright ul li .logofooter {
+  height: 7rem;
 }
 .footer .copyright #h6Copyright {
   text-align: center;
