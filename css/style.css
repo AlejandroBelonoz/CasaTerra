@@ -167,6 +167,7 @@ main {
   color: #ffffff;
   list-style-type: none;
   text-align: center;
+  border: #ffffff solid 2px;
 }
 .contenidoproductos .contenedorCategoria .imagenCategoria {
   border-radius: 1rem;

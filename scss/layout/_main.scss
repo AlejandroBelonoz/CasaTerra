@@ -41,6 +41,7 @@ main {
 
   .contenedorCategoria {
     @include category-container;
+    border: #ffffff solid 2px;
 
     .imagenCategoria {
       border-radius: 1rem;
